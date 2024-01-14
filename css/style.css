@@ -1,0 +1,274 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand img {
+    max-width: 40%;
+    height: auto;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #71a2a3;
+}
+
+.navbar-nav li {
+    position: relative;
+    list-style: none;
+}
+
+.navbar-nav li a {
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.navbar-nav li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 6px;
+    bottom: 0;
+    background-color: #be9199;
+    border-radius: 10px;
+    transition: width 0.3s; /*efecto de transicion*/
+}
+
+.navbar-nav li a:hover::before {
+    width: 85%;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+/*inicio*/
+.inicio-header {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.inicio-line {
+    flex-grow: 1;
+    height: 4px;
+    border-radius: 8px;
+    margin-left: 15px;
+    background-color: #71a2a3;
+}
+
+.container-inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0%;
+    margin-top: 4%
+}
+
+.nombre {
+    font-size: 80px;
+    margin-left: 10%;
+    color: #71a2a3;
+}
+
+.left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.right {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.text {
+    margin-left: 10%;
+}
+
+.img-inicio {
+    width: 45%;
+    height: auto;
+}
+
+.enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #71a2a3;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #508991; /* Cambia el color al pasar el ratón por encima */
+}
+
+/*sobre mi*/
+.aboutme-header {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.aboutme-line {
+    flex-grow: 1;
+    height: 4px; 
+    border-radius: 8px;
+    margin-left: 15px;
+    background-color: #71a2a3;
+}
+
+.aboutme-me {
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.sobre-mi {
+    margin-top: 4%;
+}
+
+.formacion {
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+
+.img1, .img2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lenguaje {
+    margin-top: 5%;
+    width: 60px;
+    height: 60px; 
+}
+
+/*proyectos*/
+.projects-header {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #71a2a3;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cards-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.proyectos {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.projects-header {
+    display: flex;
+    align-items: center;
+}
+
+.projects-line {
+    flex-grow: 1;
+    height: 4px; /* Ajusta el grosor de la línea según tus preferencias */
+    border-radius: 8px;
+    margin-left: 15px;
+    background-color: #71a2a3;
+}
+
+/*contacto*/
+.contact-header {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.contact-line {
+    flex-grow: 1;
+    height: 4px; /* Ajusta el grosor de la línea según tus preferencias */
+    border-radius: 8px;
+    margin-left: 15px;
+    background-color: #71a2a3;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+    margin-top: 6%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #71a2a3;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #71a2a3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 180px;
+    cursor: pointer;
+}
+
+/*footer*/
+.footer-inicio {
+    margin-top: 9%;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #eee1e6;
+}
+
+.footer-aboutme {
+    margin-top: 5%;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #eee1e6;
+}
+
+.footer-projects {
+    margin-top: 5%;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #eee1e6;
+}
+
+.footer-contact {
+    margin-top: 6%;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #eee1e6;
+}
